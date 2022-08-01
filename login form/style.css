@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+.hero{
+	height: 215%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(1.jpg);
+	background-position:center;
+	background-size: cover;
+	position: absolute;
+}
+	
+
+.form-box{
+	width: 900px;
+	height: 92%;
+	position: relative;
+	margin: 6% auto;
+	background: #fff;
+	padding: 5px;
+	overflow:hidden;
+	box-shadow: 0 14px 28px #rgba(0,0,0,0.25), 0 10px 10px ,rgba(0,0,0,0.22);
+	border-radius: 3px;
+}
+.button-box{
+	width: 450px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #7B68EE;
+	border-radius: 30px;
+}
+.toggle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+.btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient;
+	border-radius: 50px;
+	transition:.5s;
+}
+.register{
+	float:left;
+	background-color:white;
+	margin-left:150px;
+	padding-top:50px;
+	padding:20px;
+	font-size:18px;
+	width:750px;
+}
+.reg legend{
+	padding-top:10px;
+	padding-bottom:20px;
+	font-size:25px;
+}
+label{
+	padding-top:7px;
+	width:150px;
+	vertical-align:top;
+	display:inline-block;
+}
+.reg textarea{
+	width:500px;
+	display:inline-block;
+	height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.8s;
+}
+.reg input[type=text],input[type=number],input[type=Email],input[type=date],input[type=password]{
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+	-webkit-transition: 0.8s;
+    transition: 0.8s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[type=number]:focus{
+	border:3px solid #555;
+}
+input[type=date]:focus{
+	border:3px solid #555;
+}
+input[type=Email]:focus{
+	border:3px solid #555;
+}
+input[type=password]:focus {
+    border: 3px solid #555;
+}
+
+
+input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: 3px solid #ccc;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+}
+
+.error {
+    background-color: red;
+    border: 2px black solid;
+    display: block;
+    color: aliceblue;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.hide {
+    display: none;
+} 

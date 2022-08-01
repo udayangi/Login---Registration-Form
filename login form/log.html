@@ -1,0 +1,77 @@
+<html>
+<head>
+</head>
+<title>Login and Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero">
+<div class="form-box">
+<div class="button-box">
+<div id="btn"></div>
+<button type="button"class="toggle-btn"><h1>Login and Registration Form</h1></button>
+
+</div>
+
+<div class="register">
+<form class="reg" form onsubmit="return validateForm()">
+<article>
+				
+<label>First Name:</label>
+<input type="text" name="fname"placeholder="Your First Name" required onchange="maxchar()"><br/><br/>
+						
+<label>Last Name:</label>
+<input type="text" name="lname" placeholder="Your Last Name" required onchange="maxchar()"><br/><br/>
+<label>NIC:</label>
+<input type="text" name="nic"placeholder="NIC Number" required/><br/><br/>
+
+
+<label>Date of Birth:</label>
+        <input type="date" name="dob" id="dob" required onchange="Calage()">
+        <label>Age</label>
+        <input type="number" name="age" id="age" required disabled>
+        <br/><br/>
+
+<label>Address:</label>
+<textarea name="address" placeholder="Enter your address" required/></textarea><br/><br/>
+
+<label>Contact No:</label>
+<input type="number" name="mobile" pattern="0\d{9}" placeholder="0714578987" required/><br/><br/>
+
+<label>Email:</label>
+<input type="Email" name="email" id="email" placeholder="Email"  required onchange="validateEmail()"><br /><br />
+
+<label>User Name:</label>
+<input type="text" name="uname"placeholder="User Name" id="uname" required onchange="userName()"><br/><br/>
+
+<label>Password:</label>
+<input type="password" name="pwd" placeholder="Enter the Password" id="pwd" required onchange="pwdValidation()"><br/><br/>
+
+<label>Confirm Password:</label>
+<input type="password" name="cnf_pwd" id="cnf_pwd" placeholder="Confirm your password" required onchange="pwdMatch()"><br/><br/>
+
+
+	
+<tr>
+<td><input type="checkbox" name="ag" id="ag" required onchange="condition()"> 
+I agree to the terms and conditions of the university.</td></tr>
+</br>
+</br>
+
+<input type="submit" value="Register" id="su-button" disabled>
+<input type="reset" value="Reset"/>
+<div id="error"class="hide"></div>
+				
+				
+		
+</article>
+</form>
+</div>
+<script src="js.js"></script>
+ </div>
+</div>
+
+
+
+</body>
+</html>
